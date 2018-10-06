@@ -1,6 +1,9 @@
 # AvatarDrawable
 
-Drawable for showing circled avatars in android
+Drawable for showing circled plain color in gradient form with letters inside.This is very usefull when you haven't downloaded profile image. You can use it as empty view
+
+![Friend list](https://github.com/vomolis/AvatarDrawable/blob/master/screenshots/screen-1.png?raw=true "Title")
+
 
 ## Installation using Gradle
 
