@@ -1,8 +1,33 @@
 apply plugin: 'com.android.library'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+    bintrayRepo = 'Android'
+    bintrayName = 'me.dara.avatar-drawable'
+
+    publishedGroupId = 'me.dara.avatar-drawable'
+    libraryName = 'AvatarDrawable'
+    artifact = 'avatar-drawable'
+
+    libraryDescription = 'Avatar Drawable for imageview like Telegram'
+
+    siteUrl = 'https://github.com/vomolis/AvatarDrawable'
+    gitUrl = 'https://github.com/vomolis/AvatarDrawable.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'vomolis'
+    developerName = 'Sardor Islomov'
+    developerEmail = 'sardor.islomov.96@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 
 android {
     compileSdkVersion 27
@@ -18,9 +43,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+}
+
+if (project.rootProject.file('local.properties').exists()){
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 }
