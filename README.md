@@ -28,7 +28,7 @@ val drawable  = AvatarDrawable.Builder()
 
 ## Notice
 
-Textsize is in sp format you dont have to convert it to pixels.
+Textsize is in sp format you dont have to convert it to pixels.<br/>
 Width and height are in dp format you don't have to conver it to pixels also
 
 
