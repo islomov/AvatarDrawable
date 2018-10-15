@@ -37,6 +37,7 @@ Width and height are in dp format you don't have to conver it to pixels also
 
 ```
 Copyright 2018 Sardor Islomov
+
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. 
 You may obtain a copy of the License at
